@@ -25,23 +25,6 @@ class SetGameViewModel: ObservableObject {
         model.score
     }
     
-//    var statusText: String {
-//        switch wasMatch {
-//        case .selectCard:
-//            return "Choose card(s)"
-//        case .noMatch:
-//            return "Selected cards don't make a set"
-//        case .match:
-//            return "Well done! Cards match!"
-//        case .noMoreCards:
-//            return """
-//            Congrats!
-//            You finished the deck cards.
-//            You can start a new game.
-//            """
-//        }
-//    }
-    
     // MARK: - Intent(s)
     func choose(_ card: SetGame.Card) {
         wasMatch = model.select(card: card)
